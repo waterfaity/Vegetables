@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.waterfairy.vegetables.structure.login.LoginActivity">
+
+    <com.waterfairy.widget.ScaleImageView
+        android:id="@+id/login_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_bg"
+        app:heightRatio="257"
+        app:heightStandard="false"
+        app:widthRatio="609"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_account"
+                    android:textSize="@dimen/dp14"/>
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:background="@null"
+                    android:hint="@string/loin_input_account"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textSize="@dimen/dp13"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_password"
+                    android:textSize="@dimen/dp14"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:background="@null"
+                    android:hint="@string/loin_input_password"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:textSize="@dimen/dp13"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_divider_color"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/style_bt_login"
+            android:clickable="true"
+            android:onClick="onLoginClick"
+            android:text="@string/login_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp18"/>
+
+        <TextView
+            android:id="@+id/tv_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:onClick="onLoginClick"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp16"
+            android:paddingTop="@dimen/dp5"
+            android:text="@string/registe"
+            android:textColor="@drawable/style_txt_login_register"
+            android:textSize="@dimen/dp13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quit_login"
+            android:textSize="@dimen/dp14"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp10">
+
+            <com.waterfairy.widget.ScaleImageView
+                android:id="@+id/siv_login_wx"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:clickable="true"
+                android:onClick="onLoginClick"
+                android:src="@mipmap/ic_launcher"
+                app:setFilter="true"/>
+
+            <com.waterfairy.widget.ScaleImageView
+                android:id="@+id/siv_login_qq"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp20"
+                android:clickable="true"
+                android:onClick="onLoginClick"
+                android:src="@mipmap/ic_launcher"
+                app:setFilter="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

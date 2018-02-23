@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity_select_service"
+    android:orientation="vertical"
+    tools:context="com.waterfairy.vegetables.structure.home.activity.SelectServiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/action_bar">
+
+        <com.waterfairy.widget.ScaleImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp3"
+            android:src="@mipmap/icon_back"
+            app:fixXY="true"
+            app:setFilter="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:text="@string/select_service"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_weight="1"
+        android:background="@drawable/style_bt_select_service"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/bg_pay_text"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp25"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="@string/i_will_buy"
+            android:textSize="@dimen/dp16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dp50"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_weight="1"
+        android:background="@drawable/style_bt_select_service"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:background="@drawable/bg_sell_text"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="卖"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp25"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="@string/i_will_sell"
+            android:textSize="@dimen/dp16"/>
+    </LinearLayout>
+</LinearLayout>
