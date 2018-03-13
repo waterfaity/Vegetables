@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.waterfairy.vegetables.R;
+import com.waterfairy.vegetables.structure.home.activity.MainActivity;
 import com.waterfairy.vegetables.structure.home.activity.SelectServiceActivity;
 import com.waterfairy.widget.ScaleImageView;
 
@@ -45,7 +46,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //        Log.i(TAG, "onLoginClick: " + view.getId());
         switch (view.getId()) {
             case R.id.bt_login:
-                startActivity(new Intent(this, SelectServiceActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }
